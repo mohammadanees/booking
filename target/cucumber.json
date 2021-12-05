@@ -1,0 +1,230 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify user is able to save the customer details successfully",
+        "description": "",
+        "id": "hotel-booking-form-feature;verify-user-is-able-to-save-the-customer-details-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 981711500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19581179500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am at the hotel booking form page",
+            "match": {
+              "location": "MainSteps.i_am_at_the_hotel_booking_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2046914700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Fill \"Aman\" \"Sh\" \"200\" \"true\" \"2021-12-21\" \"2021-12-23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aman",
+                  "offset": 6
+                },
+                {
+                  "val": "Sh",
+                  "offset": 13
+                },
+                {
+                  "val": "200",
+                  "offset": 18
+                },
+                {
+                  "val": "true",
+                  "offset": 24
+                },
+                {
+                  "val": "2021-12-21",
+                  "offset": 31
+                },
+                {
+                  "val": "2021-12-23",
+                  "offset": 44
+                }
+              ],
+              "location": "MainSteps.fill(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 542593000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on save button",
+            "match": {
+              "location": "MainSteps.i_click_on_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31563293000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user \"Aman\"and \"Sh\" should be added successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aman",
+                  "offset": 6
+                },
+                {
+                  "val": "Sh",
+                  "offset": 16
+                }
+              ],
+              "location": "MainSteps.user_and_should_be_added_successfully(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Verify user is able to delete the customer details successfully",
+        "description": "",
+        "id": "hotel-booking-form-feature;verify-user-is-able-to-delete-the-customer-details-successfully;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 799223200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28177302800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am at the hotel booking form page",
+            "match": {
+              "location": "MainSteps.i_am_at_the_hotel_booking_form_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 198095400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Delete the user details \"Aman\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aman",
+                  "offset": 25
+                }
+              ],
+              "location": "MainSteps.delete_the_user_details(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15801525600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user \"Aman\" should be deleted successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aman",
+                  "offset": 6
+                }
+              ],
+              "location": "MainSteps.user_should_be_deleted_successfully(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 15,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Hotel booking form feature",
+    "description": "I want to use this template for my feature file",
+    "id": "hotel-booking-form-feature",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/HotelBookingForm.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]
